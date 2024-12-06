@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tribute Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="first">
+        <h1>Ratan Tata</h1>
+        <br />
+        <i class="fa-regular fa-circle-play btn" onclick="playVideo()"></i>
+        <br /><br>
+        <h2><i>28 Dec 1937 – 9 Oct 2024</i></h2>
+    </div>
+    <div class="second">
+        <div class="quote">
+            <h2>
+                <i>"If you want to walk fast, walk alone. But if you want to walk far,
+                    walk together."</i>
+            </h2>
+            <div class="sign"> </div>
+        </div>
+        <div class="image"> </div>
+    </div>
+    <div class="third">
+        <h2><i> "I don’t believe in taking right decisions. I take decisions and make them right."</i></h2>
+        <div class="bio">Biography</div>
+
+        <h3>
+            <p class="para">
+                Ratan Tata was an Indian industrialist and philanthropist. He served as the chairman of Tata Group and
+                Tata Sons from 1991 to 2012 and he held the position of interim chairman from October 2016 to February
+                2017. In 2000, he received the Padma Bhushan, the third highest civilian honour in India, followed by
+                the Padma Vibhushan, the country's second highest civilian honour, in 2008.
+                <br><br>
+                Ratan Tata is one of India’s most influential business leaders, known for his leadership of the Tata
+                Group, which transformed the company into a global conglomerate. Under his stewardship, Tata expanded
+                into sectors such as steel, automobiles, IT, and hospitality, with some key acquisitions like Tetley Tea
+                and Jaguar Land Rover.
+                <br><br>
+                Ratan Tata's legacy is one of integrity, visionary leadership, and dedication to making a positive impact on society. Under his leadership, Tata Group grew into one of the largest and most respected conglomerates in the world. Ratan Tata’s business acumen, coupled with his commitment to the betterment of society, has made him a respected figure not only in India but globally.
+                <br><br>
+                He is considered one of the most influential business leaders in India and is admired for his ethical approach to business and his relentless efforts to bring about positive change in the country.
+            </p>
+        </h3>
+    </div>
+
+    <div class="container">
+        <p>&copy; 2024 Ratan Tata Tribute Page. All Rights Reserved.</p>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+    
+            <video controls>
+                <source src="videoplayback.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <script>
+        // Function to play the video and display the modal
+        function playVideo() {
+            // Get the modal
+            var modal = document.getElementById("myModal");
+
+            // Show the modal
+            modal.style.display = "block";
+
+            // Get the video element and play the video
+            var video = modal.querySelector("video");
+            video.play();
+        }
+
+        // Get the close button and close the modal when clicked
+        var span = document.getElementsByClassName("close")[0];
+        span.onclick = function() {
+            var modal = document.getElementById("myModal");
+            modal.style.display = "none"; // Hide the modal
+            var video = modal.querySelector("video");
+            video.pause(); // Pause the video when closing the modal
+            video.currentTime = 0; // Reset the video to the beginning
+        }
+
+        // Close the modal if the user clicks anywhere outside of it
+        window.onclick = function(event) {
+            var modal = document.getElementById("myModal");
+            if (event.target == modal) {
+                modal.style.display = "none";
+                var video = modal.querySelector("video");
+                video.pause();
+                video.currentTime = 0;
+            }
+        }
+    </script>
+</body>
+
+</html>

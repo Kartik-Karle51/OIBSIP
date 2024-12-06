@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Times New Roman', Times, serif
+}
+body{
+    display: flex;
+    flex-wrap: wrap;
+background-color: black;
+}
+
+.first{
+    background-color:black;
+    color: white;
+    width: 100%;
+    height: 20%;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.first h1{
+    font-size: 45px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.btn{
+    font-size: 50px;
+}
+
+.second{
+    background-color:white;
+    color: black;
+    width: 100%;
+    height: 40%;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 0;
+    z-index:-100;
+   
+}
+.second .quote{
+    width: 30%;
+    height: 100%;
+  float: left;
+  padding: 20px;
+  padding-left: 100px;
+ 
+}
+.second .quote h2 i{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    letter-spacing: 4px;
+}
+
+.second .image{
+    background-image: url(tata.jpg);
+    width: 35%;
+    margin-left: 40px;
+    float: left;
+padding: 50px;
+right: -100px;
+
+background-position: center;
+background-size: 80%;
+position: relative;
+
+background-repeat: no-repeat;
+}
+
+.second .quote .sign{
+    background-image: url(Signature_of_Ratan_Tata.svg.jpg);
+    width: 50%;
+   
+    float: left;
+padding: 10px;
+background-position: center;
+background-size: contain;
+background-repeat: no-repeat;
+position: relative;
+left: 185px;
+    height: 100px;
+    top: -4px;
+}
+.third{
+    background-color:black;
+    color: white;
+    width: 100%;
+    height: 40vh;
+    padding: 10px;
+height: 20%;
+    text-align: center;
+    
+}
+
+.third h2{
+    letter-spacing: 2px;
+    margin:auto;
+    width: 80%;
+    margin: 20px 10%;
+
+}
+.third h2::after{
+    content: '';
+    background-color: white;
+    position:relative;
+    bottom: -3px;
+display: block;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    transform: scaleX(0);
+transform-origin: left;
+transition: 1s;
+}
+.third h2:hover::after{
+transform: scaleX(1);
+transform-origin: right;
+
+}
+.para{
+    width: 50%;
+    margin: auto;
+    text-align: justify;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 18px;
+margin-top: 40px;
+margin-bottom: 20px;
+font-weight: 700;
+
+    
+}
+.bio{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    margin-top: 40px;
+    font-weight: bold;
+
+}
+.container{
+    width: 100%;
+    background-color: white;
+    height: 25px;
+    color: black;
+    text-align: center;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+margin-top: 50px;
+font-weight: 700;
+}
+
+
+ /* The modal (background) */
+ .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    
+}
+
+/* Modal content */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The close button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Video styling */
+video {
+    width: 100%; /* Adjust width to fit container */
+}
