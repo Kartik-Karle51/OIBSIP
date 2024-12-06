@@ -1,0 +1,15 @@
+package com.Demo;
+
+import java.io.*;
+import jakarta.servlet.*;
+import jakarta.servlet.http.*;
+import java.sql.*;
+
+public class LoginServlet extends HttpServlet {
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws Exception, IOException {
+	PrintWriter out=response.getWriter();
+	Class.forName("com.mysql.cj.jdbc.Driver");
+	}
+
+}

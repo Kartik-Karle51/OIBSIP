@@ -1,0 +1,14 @@
+package com.Demo;
+import java.sql.*;
+public class ConnectionProvider {
+public static void connection()
+{
+	
+	Class.forName("com.mysql.cj.jdbc.Driver");
+	Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/LoginAuthentication","root","Kartik@5151");
+	Statement stmt=con.createStatement();
+
+
+}
+}
+

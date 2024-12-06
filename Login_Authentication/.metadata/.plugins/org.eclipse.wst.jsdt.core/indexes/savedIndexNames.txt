@@ -1,0 +1,8 @@
+INDEX VERSION 1.4+D:\Oasis InfoByte\Login Authentication\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+1338179658.index
+2384389902.index
+2138563212.index
+3414711304.index
+705149894.index
+3938658375.index
+3368469388.index

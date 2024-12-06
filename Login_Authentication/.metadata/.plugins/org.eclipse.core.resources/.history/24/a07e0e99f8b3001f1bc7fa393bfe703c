@@ -1,0 +1,17 @@
+const wrapper=document.querySelector(".wrapper");
+const registerLink=document.querySelector(".register-link");
+const loginlink=document.querySelector(".login-link");
+registerLink.addEventListener("click",()=>{
+    wrapper.classList.add('active');
+});
+
+loginlink.addEventListener("click",()=>{
+    wrapper.classList.remove('active');
+});
+
+let input=document.querySelector(".email");
+input.addEventListener("change",()=>{
+	if(input.value>0){}
+	window.alert("hii");
+})
+

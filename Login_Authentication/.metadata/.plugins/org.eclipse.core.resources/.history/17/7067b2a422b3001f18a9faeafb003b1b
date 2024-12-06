@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('LoginAuthentication/jeremy-bishop-uAfZBP-GtiA-unsplash.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+
+}
+.wrapper {
+    position: relative;
+    width: 400px;
+    height: 440px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: height .2s ease;
+    overflow: hidden;
+}
+
+.wrapper.active {
+    height: 520px;
+}
+
+.wrapper .login {
+    transition: transform 0.18s ease;
+    transform: translateX(0);
+}
+
+.wrapper.active .login {
+    transition: none;
+    transform: translateX(-400px);
+}
+
+.wrapper .form-box.register {
+    position: absolute;
+    transition: none;
+    transform: translateX(400px);
+
+}
+
+.wrapper.active .form-box.register {
+    position: absolute;
+    transition: .6s;
+    transform: translateX(0px);
+
+}
+
+
+.icon-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 25px;
+    cursor: pointer;
+    color: white;
+    font-size: 30px;
+    z-index: 1;
+}
+.icon-close:hover{
+    font-size:32px;
+    color: cyan;
+}
+.wrapper .form-box {
+    width: 100%;
+    padding: 40px;
+
+}
+
+.form-box h2 {
+    font-size: 2em;
+    color: white;
+    text-align: center;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #162938;
+    margin: 30px 0;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: white;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -5px;
+}
+
+
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: white;
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+}
+
+.input-box .icon {
+    position: absolute;
+    right: 8px;
+    color: white;
+    font-size: 1.2em;
+    line-height: 57px;
+    font-weight: bold;
+}
+
+.input-box .icon:hover{
+    color: cyan;
+}
+
+.remember-forgot {
+    font-size: .9em;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.remember-forgot label input {
+    width: 20px;
+    height: 15px;
+    accent-color: cyan;
+    margin-right: 6px;
+}
+
+.remember-forgot a {
+    text-decoration: none;
+    color: cyan;
+
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    width: 100%;
+    height: 45px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 700;
+    background-color: rgba(255, 255, 255, 0.351);
+}
+
+.btn:hover {
+    background-color: white;
+    color: black;
+}
+
+.login-register {
+    font-size: .9em;
+    text-align: center;
+    margin-top: 30px;
+
+}
+
+.login-register p a {
+    margin-left: 50px;
+    font-size: 1em;
+    text-decoration: none;
+    font-weight: 600;
+    color: cyan;
+}
+
+.login-register p a:hover {
+    text-decoration: underline;
+}
